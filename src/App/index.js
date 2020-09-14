@@ -1,10 +1,13 @@
 import React from "react";
 import "./App.css";
+import WelcomeMessage from "./WelcomeMessage";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
+    <div>
+      <WelcomeMessage />
     </div>
   );
 }
