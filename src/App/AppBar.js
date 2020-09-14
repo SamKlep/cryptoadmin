@@ -17,7 +17,7 @@ const ControlButtonElem = styled.div`
   ${(props) =>
     props.active &&
     css`
-      text-shadow: 0px 0px 60px #03ff03;
+      text-shadow: 0px 0px 2px #39ff14, 0 0 2.5em #afff14, 0 0 2.5em #faed27;
     `}
 `;
 
@@ -29,10 +29,7 @@ function ControlButton({ name, active }) {
   return (
     <AppContext.Consumer>
       {({ page, setPage }) => (
-        <ControlButtonElem 
-        active={page === name}
-        onClick={() => setPage(name)}
-        >
+        <ControlButtonElem active={page === name} onClick={() => setPage(name)}>
           {toProperCase(name)}
         </ControlButtonElem>
       )}
