@@ -24,6 +24,9 @@ export class AppProvider extends React.Component {
     this.setState({coinList})
   };
 
+// https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR api_key=407ce028abe941a672ad85f05150bc2b5794946edb2240e32d61e2e64f57d21e
+// cc.setApiKey('<your-api-key>')
+
   confirmFavorites = () => {
     this.setState({
       firstVisit: false,
